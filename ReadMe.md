@@ -1,0 +1,1 @@
+git clone --recurse-submodules https://github.com/sarang628/FeedScreenTestApp.git
