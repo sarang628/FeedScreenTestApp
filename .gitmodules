@@ -1,0 +1,18 @@
+[submodule "Feed"]
+	path = Feed
+	url = https://github.com/sarang628/Feed.git
+[submodule "Repository"]
+	path = Repository
+	url = https://github.com/sarang628/Repository.git
+[submodule "TorangCore"]
+	path = TorangCore
+	url = https://github.com/sarang628/TorangCore.git
+[submodule "BaseFeed"]
+	path = BaseFeed
+	url = https://github.com/sarang628/BaseFeed.git
+[submodule "TorangImageLoader"]
+	path = TorangImageLoader
+	url = https://github.com/sarang628/TorangImageLoader.git
+[submodule "VideoView"]
+	path = VideoView
+	url = https://github.com/sarang628/VideoView.git

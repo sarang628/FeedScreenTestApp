@@ -1,16 +1,20 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
 rootProject.name = "FeedScreenTestApp"
 include ':app'
+
+include ':screen_feed'
+project(':screen_feed').projectDir = new File('./Feed/screen_feed')
+
+include ':torang_core'
+project(':torang_core').projectDir = new File('./TorangCore/torang_core')
+
+include ':TorangRepository'
+project(':TorangRepository').projectDir = new File('./Repository/TorangRepository')
+
+include ':base_feed'
+project(':base_feed').projectDir = new File('./BaseFeed/base_feed')
+
+include ':torangimageloader'
+project(':torangimageloader').projectDir = new File('./TorangImageLoader/torangimageloader')
+
+include ':TorangVideoView'
+project(':TorangVideoView').projectDir = new File('./VideoView')
