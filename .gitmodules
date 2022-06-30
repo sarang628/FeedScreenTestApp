@@ -16,3 +16,6 @@
 [submodule "VideoView"]
 	path = VideoView
 	url = https://github.com/sarang628/VideoView.git
+[submodule "BagleBottomSheetDialog"]
+	path = BagleBottomSheetDialog
+	url = https://github.com/sarang628/BagleBottomSheetDialog.git
