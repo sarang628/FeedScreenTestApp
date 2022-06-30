@@ -27,13 +27,4 @@ class MenuBottomSheetNavigationImpl @Inject constructor() : MenuBottomSheetNavig
     override fun dismiss() {
         dialog?.dismiss()
     }
-
-    @Module
-    @InstallIn(ActivityComponent::class)
-    abstract class MenuBottomSheetNavigationModule {
-        @Binds
-        abstract fun go(
-            menuBottomSheetNavigationImpl: MenuBottomSheetNavigationImpl
-        ): MenuBottomSheetNavigation
-    }
 }
