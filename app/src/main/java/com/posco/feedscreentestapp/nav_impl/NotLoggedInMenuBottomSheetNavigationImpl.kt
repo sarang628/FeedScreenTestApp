@@ -1,16 +1,6 @@
 package com.posco.feedscreentestapp.nav_impl
 
-import android.content.Context
-import android.widget.Toast
-import com.example.torang_core.data.model.Feed
-import com.example.torang_core.dialog.NotLoggedInFeedDialogEventAdapter
-import com.example.torang_core.navigation.NotLoggedInMenuBottomSheetNavigation
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import dagger.Binds
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
-import javax.inject.Inject
+/*
 
 class NotLoggedInMenuBottomSheetNavigationImpl @Inject constructor() :
     NotLoggedInMenuBottomSheetNavigation {
@@ -28,4 +18,4 @@ class NotLoggedInMenuBottomSheetNavigationImpl @Inject constructor() :
     override fun dismiss() {
         dialog?.dismiss()
     }
-}
+}*/

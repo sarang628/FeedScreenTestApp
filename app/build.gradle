@@ -39,12 +39,7 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':TorangRepository')
-    implementation project(path: ':torangimageloader')
-    implementation project(path: ':TorangVideoView')
-    implementation project(path: ':torang_core')
     implementation project(path: ':screen_feed')
-    implementation project(path: ':base_feed')
 
     /** common */
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
