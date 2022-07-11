@@ -7,7 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.screen_feed.FeedsFragmentLayoutUseCase
+import com.example.screen_feed.usecase.FeedsFragmentLayoutUseCase
 import com.example.screen_feed.databinding.FragmentFeedsBinding
 import com.google.android.material.snackbar.Snackbar
 
