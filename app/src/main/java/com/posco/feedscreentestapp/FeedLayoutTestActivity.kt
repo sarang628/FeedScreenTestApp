@@ -19,7 +19,7 @@ class FeedLayoutTestActivity : AppCompatActivity() {
             com.example.screen_feed.R.layout.fragment_feeds
         )
 
-        val useCase = FeedsFragmentLayoutUseCase(
+        binding.useCase = FeedsFragmentLayoutUseCase(
             onRefreshListener = {
                 Snackbar.make(binding.root, "갱신 클릭!", Toast.LENGTH_SHORT).show()
             },
@@ -31,13 +31,10 @@ class FeedLayoutTestActivity : AppCompatActivity() {
             reLoad = {
                 Snackbar.make(binding.root, "갱신!", Toast.LENGTH_SHORT).show()
                 binding.slTimeline.isRefreshing = false
-            }
+            },
+            visibleButton = true,
+            isRefreshing = false
         )
-
-        binding.reload = useCase.reLoad
-        binding.onMenuItemClickListener = useCase.onMenuItemClickListener
-        binding.onRefreshListener = useCase.onRefreshListener
-        binding.adapter = TestAdapter()
 
     }
 
