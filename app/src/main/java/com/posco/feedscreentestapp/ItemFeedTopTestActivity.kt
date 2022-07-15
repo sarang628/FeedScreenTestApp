@@ -19,6 +19,7 @@ class ItemFeedTopTestActivity : AppCompatActivity() {
             name = "sryang",
             restaurantName = "mcdonalds",
             rating = 4.5f,
+            profilePictureUrl = "",
             onMenuClickListener = { Snackbar.make(this, binding.root, "clickMenu", Snackbar.LENGTH_SHORT).show() },
             onProfileImageClickListener = { Snackbar.make(this, binding.root, "profileClick", Snackbar.LENGTH_SHORT).show() },
             onNameClickListener = { Snackbar.make(this, binding.root, "nameClick", Snackbar.LENGTH_SHORT).show() },

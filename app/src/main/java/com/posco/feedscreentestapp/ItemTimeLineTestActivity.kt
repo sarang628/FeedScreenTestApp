@@ -20,11 +20,14 @@ class ItemTimeLineTestActivity : AppCompatActivity() {
             this,
             com.example.screen_feed.R.layout.item_time_line
         )
+        val adapter = FeedPagerAdapter()
+
         binding.useCase = ItemTimeLineUseCase(
             itemFeedTopUseCase = ItemFeedTopUseCase(
                 name = "sryang",
                 restaurantName = "mcdonalds",
                 rating = 4.5f,
+                profilePictureUrl = "https://thumb.mt.co.kr/06/2022/01/2022011414312292328_1.jpg/dims/optimize/",
                 onMenuClickListener = { snackBar(binding.root, "clickMenu") },
                 onProfileImageClickListener = { snackBar(binding.root, "profileClick") },
                 onNameClickListener = { snackBar(binding.root, "nameClick") },
@@ -42,7 +45,7 @@ class ItemTimeLineTestActivity : AppCompatActivity() {
                 isLike = true,
                 isFavorite = true
             ),
-            pageAdapter = FeedPagerAdapter()
+            pageAdapter = adapter
         )
     }
 
