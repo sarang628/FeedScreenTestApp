@@ -1,23 +1,22 @@
 package com.posco.feedscreentestapp
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import com.example.screen_feed.FeedPagerAdapter
-import com.example.screen_feed.databinding.ItemTimeLineBinding
+import com.example.screen_feed.FeedsAdapter
+import com.example.screen_feed.uistate.FeedItemUiState
 import com.example.screen_feed.usecase.ItemFeedBottomUsecase
 import com.example.screen_feed.usecase.ItemFeedTopUseCase
 import com.example.screen_feed.usecase.ItemTimeLineUseCase
 import com.google.android.material.snackbar.Snackbar
+import com.posco.feedscreentestapp.databinding.ActivityItemTimeLineListTestBinding
 
-class ItemTimeLineTestActivity : AppCompatActivity() {
+class ItemTimeLineListTestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<ItemTimeLineBinding>(
-            this,
-            com.example.screen_feed.R.layout.item_time_line
-        )
+        val binding = ActivityItemTimeLineListTestBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val useCase = ItemTimeLineUseCase(
             itemFeedTopUseCase = ItemFeedTopUseCase(
@@ -53,7 +52,14 @@ class ItemTimeLineTestActivity : AppCompatActivity() {
             }
         )
 
-        binding.useCase = useCase
+        binding.rv.apply {
+            adapter = FeedsAdapter().apply {
+                setFeeds(
+                    arrayListOf(useCase,useCase,useCase)
+                )
+            }
+        }
+
     }
 
     fun snackBar(view: View, text: String) {

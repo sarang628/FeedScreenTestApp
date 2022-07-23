@@ -18,11 +18,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ItemTimeLineListTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedsFragmentTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".ItemTimeLineTestActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ItemFeedBottomTestActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".FeedLayoutTestActivity"
             android:exported="true" />
@@ -37,7 +43,7 @@
         </activity>
         <activity
             android:name=".ItemFeedTopTestActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

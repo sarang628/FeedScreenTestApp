@@ -37,6 +37,22 @@ class MainActivity : AppCompatActivity() {
                     Intent(this@MainActivity, ItemTimeLineTestActivity::class.java)
                 )
             }
+
+            btnFeedsFragmentTest.setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, FeedsFragmentTestActivity::class.java)
+                )
+            }
+
+            btnTimeLineListTest.setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, ItemTimeLineListTestActivity::class.java)
+                )
+            }
+
+            startActivity(
+                Intent(this@MainActivity, ItemTimeLineListTestActivity::class.java)
+            )
         }
 
     }
