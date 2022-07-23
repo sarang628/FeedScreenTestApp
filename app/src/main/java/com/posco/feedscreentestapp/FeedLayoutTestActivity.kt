@@ -32,7 +32,7 @@ class FeedLayoutTestActivity : AppCompatActivity() {
                 Snackbar.make(binding.root, "갱신!", Toast.LENGTH_SHORT).show()
                 binding.slTimeline.isRefreshing = false
             },
-            visibleButton = true,
+            isEmptyFeed = true,
             isRefreshing = false
         )
 
