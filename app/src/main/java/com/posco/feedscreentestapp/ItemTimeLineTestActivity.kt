@@ -1,12 +1,10 @@
 package com.posco.feedscreentestapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.RecyclerView
+import com.example.screen_feed.FeedPagerAdapter
 import com.example.screen_feed.databinding.ItemTimeLineBinding
 import com.example.screen_feed.usecase.ItemFeedBottomUsecase
 import com.example.screen_feed.usecase.ItemFeedTopUseCase
@@ -20,7 +18,15 @@ class ItemTimeLineTestActivity : AppCompatActivity() {
             this,
             com.example.screen_feed.R.layout.item_time_line
         )
-        val adapter = FeedPagerAdapter()
+        val adapter = FeedPagerAdapter().apply {
+            setList(
+                arrayListOf(
+                    "https://thumb.mt.co.kr/06/2022/01/2022011414312292328_1.jpg/dims/optimize/",
+                    "https://thumb.mt.co.kr/06/2022/01/2022011414312292328_1.jpg/dims/optimize/",
+                    "https://thumb.mt.co.kr/06/2022/01/2022011414312292328_1.jpg/dims/optimize/"
+                )
+            )
+        }
 
         binding.useCase = ItemTimeLineUseCase(
             itemFeedTopUseCase = ItemFeedTopUseCase(
@@ -54,26 +60,4 @@ class ItemTimeLineTestActivity : AppCompatActivity() {
             this, view, text, Snackbar.LENGTH_SHORT
         ).show()
     }
-}
-
-class FeedPagerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return FeedPageHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(com.example.screen_feed.R.layout.item_feed_page, parent, false)
-        )
-    }
-
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
-    }
-
-    override fun getItemCount(): Int {
-        return 10
-    }
-
-}
-
-class FeedPageHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
 }

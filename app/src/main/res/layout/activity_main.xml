@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/fragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        class="com.example.screen_feed.FeedsFragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_feed_layout_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FeedLayoutTest" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_item_feed_bottom_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ItemFeedBottomTestActivity" />
+
+    <Button
+        android:id="@+id/btn_item_feed_top_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ItemFeedTopTestActivity" />
+
+    <Button
+        android:id="@+id/btn_item_time_line_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ItemTimeLineTestActivity" />
+
+</LinearLayout>
