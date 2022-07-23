@@ -32,15 +32,16 @@
         android:text="ItemTimeLineTestActivity" />
 
     <Button
+        android:id="@+id/btn_time_line_list_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ItemTimeLineListTestActivity" />
+
+    <Button
         android:id="@+id/btn_feeds_fragment_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="FeedsFragmentTestActivity" />
 
-    <Button
-        android:id="@+id/btn_time_line_list_test"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ItemTimeLineListTestActivity" />
 
 </LinearLayout>

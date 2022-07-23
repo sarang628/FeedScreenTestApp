@@ -49,10 +49,6 @@ class MainActivity : AppCompatActivity() {
                     Intent(this@MainActivity, ItemTimeLineListTestActivity::class.java)
                 )
             }
-
-            startActivity(
-                Intent(this@MainActivity, ItemTimeLineListTestActivity::class.java)
-            )
         }
 
     }
