@@ -1,6 +1,3 @@
 [submodule "Feed"]
 	path = Feed
 	url = https://github.com/sarang628/Feed.git
-[submodule "TorangCore"]
-	path = TorangCore
-	url = https://github.com/sarang628/TorangCore.git
