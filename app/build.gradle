@@ -39,8 +39,8 @@ android {
 }
 
 dependencies {
+    implementation 'com.github.sarang628:TorangCore:5dd8950a5a'
     implementation project(path: ':screen_feed')
-    implementation project(path: ':core')
 
     /** common */
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"

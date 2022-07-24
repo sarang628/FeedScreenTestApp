@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.screen_feed.FeedPagerAdapter
-import com.example.screen_feed.FeedsAdapter
-import com.example.screen_feed.uistate.FeedItemUiState
+import com.example.screen_feed.adapters.FeedsAdapter
 import com.example.screen_feed.usecase.ItemFeedBottomUsecase
 import com.example.screen_feed.usecase.ItemFeedTopUseCase
 import com.example.screen_feed.usecase.ItemTimeLineUseCase

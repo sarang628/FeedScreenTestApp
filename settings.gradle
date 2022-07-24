@@ -3,6 +3,3 @@ include ':app'
 
 include ':screen_feed'
 project(':screen_feed').projectDir = new File('./Feed/screen_feed')
-
-include ':core'
-project(':core').projectDir = new File('./TorangCore/torang_core')
